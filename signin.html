@@ -23,29 +23,30 @@
         </nav>
     </header>
     <!-- Header End -->
-
-    <main class="mt-32 mb-32">
-        <!-- search bar -->
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search for games" />
-        </div>
-        <div class="event-banner mt-48">
-            <a href="#"><img src="images/eventbanner.png" alt=""></a>
-        </div>
-        <section class="events-section mt-64">
-            <h2>events</h2>
-            <div class="events mt-32">
-                <a href="#"><img src="images/event-1.png" alt="event-1"></a>
-                <a href="#"><img src="images/event-2.png" alt="event-2"></a>
-                <a href="#"><img src="images/event-3.png" alt="event-3"></a>
-                <a href="#"><img src="images/event-4.png" alt="event-3"></a>
+    <main class="signin-main">
+        <div class="signin-wrapper">
+            <div class="signin-group">
+                <h2 class="mb-48">sign in</h2>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Your Email" id="signin-email" name="signin-email" required>
+                    <input class="mt-16" type="password" placeholder="Your Password" id="signin-pass" name="signin-pass" required>
+                    <button type="submit" class="btn primary mt-24">SIGN IN</button>
+                </form>
+                <p class="mt-16">Don't have an account? <a class="signup-link" href="#">Sign up</a></p>
+                <p class="signin-line mt-16">Or sign in with</p>
+                <div class="signin-icon-group mt-16">
+                    <ul role="list" class="social-list">
+                        <li><i class="fa-brands fa-google"></i></li>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-discord"></i></li>
+                    </ul>
+                </div>
             </div>
-        </section>
+            <img class="signin-image" src="images/signin-image.png" alt="">
+        </div>
     </main>
-
     <!-- Footer Start -->
-    <footer class="mt-128">
+    <footer>
         <div class="footer">
             <div class="social-container">
                 <a class="logo" href="#">GameBolt</a>
@@ -59,10 +60,10 @@
             <div class="f-nav-container">
                 <ul>
                     <li><a href="#">Store</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">SignIn</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Games</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="signin.html">SignIn</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#">Services</a></li>
                 </ul>
             </div>
@@ -79,6 +80,7 @@
             </div>
         </div>
     </footer>
+    <!-- Footer End -->
 </body>
 
 </html>

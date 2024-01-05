@@ -317,7 +317,7 @@ footer {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 5.5rem;
 }
 .footer ul {
   list-style-type: none;
@@ -510,14 +510,12 @@ footer {
 }
 
 /* artworks page */
-
 .artworks-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   place-items: center;
   gap: 1rem;
 }
-
 .artworks-gallery img {
   border-radius: 0.5rem;
   /* filter: grayscale(100%); */
@@ -528,7 +526,6 @@ footer {
 } */
 
 /* About us page */
-
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -620,11 +617,9 @@ footer {
 .contact-group form button {
   padding: 1rem 2rem;
 }
-
 .map-group {
   text-align: center;
 }
-
 .map-group iframe {
   border-radius: 0.5rem;
 }
@@ -638,7 +633,6 @@ footer {
   height: auto;
   border-radius: 1rem;
 }
-
 .events {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -653,4 +647,57 @@ footer {
 .events img:hover {
     scale: 1.03;
     box-shadow: 0 5px 30px 2px rgba(70, 119, 254, 0.3);
+}
+
+/* signin page */
+.signin-main {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    padding: 5rem;
+}
+.signin-wrapper {
+    overflow: hidden;
+    width: 1000px;
+    background: var(--neutral-800);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 2rem;
+}
+.signin-group {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 4rem 3rem;
+}
+.signin-group form input {
+    width: 400px;
+    padding: 1.5rem 2rem;
+    background: var(--neutral-900);
+    color: var(--neutral-400);
+    border: 1px solid var(--neutral-700);
+    border-radius: 10rem;
+    outline: none;
+}
+.signin-group form input:active,
+.signin-group form input:focus,
+.signin-group form input:hover{
+    outline: 1px solid var(--neutral-600);
+}
+.signup-link {
+    color: var(--neutral-400);
+    transition: color .3s;
+}
+.signup-link:hover {
+    color: var(--primary);
+}
+.signin-line {
+    border-top: 2px solid var(--neutral-600);
+    width: 70%;
+    padding-top: 1rem;
+}
+.signin-image {
+    height: 100%;
+    object-fit: cover;
 }
