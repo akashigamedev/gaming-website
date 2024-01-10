@@ -1,168 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GameBolt - Gaming App</title>
-    <script
-      src="https://kit.fontawesome.com/2afa748009.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header>
-      <nav>
-        <a class="logo" href="index.html">GAMEBOLT</a>
-        <ul role="list">
-          <li><a href="artworks.html">ARTWORKS</a></li>
-          <li><a href="events.html">EVENTS</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-        </ul>
-        <a href="signin.html">SIGN IN</a>
-      </nav>
-    </header>
 
-    <main>
-      <!-- search bar -->
-      <div class="search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search for games" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameBolt - Gaming App</title>
+  <script src="https://kit.fontawesome.com/2afa748009.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav>
+      <a class="logo" href="index.html">GAMEBOLT</a>
+      <ul role="list">
+        <li><a href="artworks.html">ARTWORKS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+      </ul>
+      <a href="signin.html">SIGN IN</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- search bar -->
+    <div class="search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search for games" />
+    </div>
+
+    <!-- games gallery -->
+    <div class="gallery">
+      <div class="big-card">
+        <img
+          src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/cyberpunk-2077/9/9a/Cyberpunk_2077_Phantom_Liberty_Banner.png"
+          alt="cyberpunk" />
+        <div class="big-card__content">
+          <h2>cyberpunk 2077</h2>
+          <p>
+            Cyberpunk 2077 is an open-world, action-adventure RPG set in the
+            dark future of Night City — a dangerous me`opolis obsessed with
+            power, glamor, and ceaseless body modification.
+          </p>
+          <a class="btn primary mt-16" href="gameinfo.html">Learn More</a>
+        </div>
       </div>
-
-      <!-- games gallery -->
-      <div class="gallery">
+      <div class="justify-center mt-16">
+        <button id="g-btn1" class="btn gallery-btn"></button>
+        <button id="g-btn2" class="btn gallery-btn"></button>
+        <button id="g-btn3" class="btn gallery-btn"></button>
+        <button id="g-btn4" class="btn gallery-btn"></button>
+        <button id="g-btn5" class="btn gallery-btn"></button>
+        <button id="g-btn6" class="btn gallery-btn"></button>
+      </div>
+    </div>
+    <section class="category-section">
+      <h2>New And Trending</h2>
+      <div class="card-grid mt-24">
         <div class="card">
-          <img src="images/card-1.png" alt="cyberpunk" />
-          <div class="card-content">
-            <h2>cyberpunk 2077</h2>
-            <p>
-              Cyberpunk 2077 is an open-world, action-adventure RPG set in the
-              dark future of Night City — a dangerous me`opolis obsessed with
-              power, glamor, and ceaseless body modification.
-            </p>
-            <a class="btn primary" href="gameinfo.html">Learn More</a>
-          </div>
-        </div>
-        <div class="justify-center mt-16">
-          <button id="g-btn1" class="btn gallery-btn"></button>
-          <button id="g-btn2" class="btn gallery-btn"></button>
-          <button id="g-btn3" class="btn gallery-btn"></button>
-          <button id="g-btn4" class="btn gallery-btn"></button>
-          <button id="g-btn5" class="btn gallery-btn"></button>
-          <button id="g-btn6" class="btn gallery-btn"></button>
-        </div>
-      </div>
-      <section class="category-section">
-        <h2>BROWSE BY CATEGORY</h2>
-        <div class="games-container mt-24">
-          <div class="game-card align-end">
-            <img src="images/farcry.png" alt="action" />
-            <h3 class="mb-16">ACTION</h3>
-          </div>
-          <div class="game-card align-end">
-            <img src="images/outlast.png" alt="horror" />
-            <h3 class="mb-16">HORROR</h3>
-          </div>
-          <div class="game-card align-end">
-            <img src="images/mortal kombat 11.png" alt="fighting" />
-            <h3 class="mb-16">FIGHTING</h3>
-          </div>
-          <div class="game-card align-end">
-            <img src="images/watch-dogs.png" alt="open world" />
-            <h3 class="mb-16">OPEN WORLD</h3>
-          </div>
-        </div>
-      </section>
-      <section class="franchise-section mt-64">
-        <h2>FEATURES FRANCHISES</h2>
-        <div class="games-container mt-24">
-          <div class="game-card align-end">
-            <img class="low-brightness" src="images/halo.png" alt="halo" />
-            <h3 class="mb-16">HALO</h3>
-          </div>
-          <div class="game-card align-end">
-            <img
-              class="low-brightness"
-              src="images/monster hunter.png"
-              alt="monster hunter"
-            />
-            <h3 class="mb-16">MONSTER HUNTER</h3>
-          </div>
-          <div class="game-card align-end">
-            <img class="low-brightness" src="images/doom.png" alt="doom" />
-            <h3 class="mb-16">DOOM</h3>
-          </div>
-          <div class="game-card align-end">
-            <img
-              class="low-brightness"
-              src="images/resident-evil.png"
-              alt="halo"
-            />
-            <h3 class="mb-16">RESIDENT EVIL</h3>
-          </div>
-        </div>
-      </section>
-      <section class="events-section mt-64 mb-64">
-        <h2>GAMING EVENTS</h2>
-        <div class="games-container mt-24">
-          <div class="game-card align-center f-column">
-            <img src="images/comic con.png" alt="delhi comic con" />
-            <h3>COMIC CON</h3>
-            <h4>DEC 10 2024</h4>
-          </div>
-          <div class="game-card align-center f-column">
-            <img src="images/hyper gaming event.png" alt="hyper gaming fest" />
-            <h3>HYPER GAMING FEST</h3>
-            <h4>FEB 12 2024</h4>
-          </div>
-          <div class="game-card align-center f-column">
-            <img src="images/soul gaming event.png" alt="soul gaming event" />
-            <h3>S8UL GAMING FESTIVAL</h3>
-            <h4>MAR 23 2024</h4>
-          </div>
-          <div class="game-card align-center f-column">
-            <img src="images/brackeys-gamejam.png" alt="brackeys game jam" />
-            <h3>BRACKEYS GAMEJAM</h3>
-            <h4>AUG 21 2024</h4>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <div class="social-container">
-          <a class="logo" href="#">GameBolt</a>
-          <ul class="social-list" role="list" aria-label="social-links">
-            <li><i class="fa-brands fa-discord"></i></li>
-            <li><i class="fa-brands fa-x-twitter"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-facebook-f"></i></li>
-          </ul>
-        </div>
-        <div class="f-nav-container">
-          <ul>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">SignIn</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-          </ul>
-        </div>
-        <div class="newsletter-container">
-          <div>
-            <div class="subscribe-box">
-              <form action="#" method="post">
-                <input type="email" placeholder="Email" autocomplete="off" required/>
-                <button class="btn secondary">SUBSCRIBE</button>
-              </form>
+          <img class="card__img" src="images/game-1.jpg" alt="">
+          <div class="card__content">
+            <h3>warhammer 4000</h3>
+            <div class="card__genres">
+              <p>Isometric</p>
+              <p>Exploration</p>
+              <p>Combat</p>
             </div>
-            <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="images/game-2.jpg" alt="">
+          <div class="card__content">
+            <h3>baldur's gate 3</h3>
+            <div class="card__genres">
+              <p>RPG</p>
+              <p>Story</p>
+              <p>Choices</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="images/game-3.jpg" alt="">
+          <div class="card__content">
+            <h3>Ready or Not</h3>
+            <div class="card__genres">
+              <p>Tactical</p>
+              <p>Realistic</p>
+              <p>Multipayer</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="images/game-4.jpg" alt="">
+          <div class="card__content">
+            <h3>Lethal Company</h3>
+            <div class="card__genres">
+              <p>Horror</p>
+              <p>Co-Op</p>
+              <p>FPS</p>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section class="franchise-section mt-32">
+      <h2>FEATURED FRANCHISES</h2>
+      <div class="card-grid mt-24">
+        <div class="card">
+          <img class="card__img" src="images/featured-1.jpg" alt="">
+          <div class="card__content">
+            <h3>HALO SERIES</h3>
+            <div class="card__genres">
+              <p>FPS</p>
+              <p>Classic</p>
+              <p>Multiplayer</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="images/featured-2.jpg" alt="">
+          <div class="card__content">
+            <h3>God of War</h3>
+            <div class="card__genres">
+              <p>Plot</p>
+              <p>Hack and Slash</p>
+              <p>Action</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="images/featured-3.jpg" alt="">
+          <div class="card__content">
+            <h3>Call of duty</h3>
+            <div class="card__genres">
+              <p>FPS</p>
+              <p>Multiplayer</p>
+              <p>Shooter</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="images/featured-4.png" alt="">
+          <div class="card__content">
+            <h3>Devil May Cry</h3>
+            <div class="card__genres">
+              <p>Action</p>
+              <p>Hack and Slash</p>
+              <p>Violent</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="event-section mt-32 mb-64">
+      <h2>Gaming Events</h2>
+      <div class="card-grid mt-24">
+        <div class="card">
+          <img class="card__img" src="images/event-1.png" alt="">
+          <div class="card__content">
+            <h3>Medway Rapture</h3>
+            <p class="mt-16">JAN 24 2024</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="images/event-2.png" alt="">
+          <div class="card__content">
+            <h3>Game Festival</h3>
+            <p class="mt-16">MAR 15 2024</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="images/event-3.png" alt="">
+          <div class="card__content">
+            <h3>BJV Game Jam</h3>
+            <p class="mt-16">JUN 08 2024</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="images/event-4.png" alt="">
+          <div class="card__content">
+            <h3>Global Game Jam</h3>
+            <p class="mt-16">DEC 19 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="social-container">
+        <a class="logo" href="#">GameBolt</a>
+        <ul class="social-list" role="list" aria-label="social-links">
+          <li><i class="fa-brands fa-discord"></i></li>
+          <li><i class="fa-brands fa-x-twitter"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-facebook-f"></i></li>
+        </ul>
+      </div>
+      <div class="f-nav-container">
+        <ul>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">SignIn</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+      <div class="newsletter-container">
+        <div>
+          <div class="subscribe-box">
+            <form action="#" method="post">
+              <input type="email" placeholder="Email" autocomplete="off" required />
+              <button class="btn secondary">SUBSCRIBE</button>
+            </form>
+          </div>
+          <p>&copy; Copyright. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
